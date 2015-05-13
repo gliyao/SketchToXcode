@@ -1,6 +1,6 @@
 # SketchToXcode
 
-Your don't need to manage assets manually. This script help you export all the assets you need from your Sketch file.
+You don't need to manage assets manually. This script help you export all the assets you need from your Sketch file.
 
 ## Requirement
 1. Sketch app
