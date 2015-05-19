@@ -8,7 +8,7 @@ You don't need to manage assets manually. This script help you export all the as
 
 ## Sketch file setup
 1. An artboard "AppIcon" and its size is 1024x1024
-2. Slices for your icons. (Slice name as assets name)
+2. Slices for your icons. (Slice name as assets name, and it must design by 2x pixel)
 
 ## Steps
 1. Put do_sketch.sh and your Sketch file to project root.

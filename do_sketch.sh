@@ -210,7 +210,8 @@ function exportIcons()
     # export icon as pdf vector
     sketchtool export slices "$SKETCH_FILE" \
         --output="$ICONS_DIR" \
-        --formats="pdf"
+        --formats="pdf" \
+        --scales="0.5"
 
     # create assets to XCode
     cd $ICONS_DIR
@@ -218,7 +219,7 @@ function exportIcons()
     for file in *.pdf
         do
 
-        fname=${file%%.*}
+        fname=${file%%@*}
         
         # create imageset file
         assets_name="$fname".imageset
@@ -255,8 +256,6 @@ cat << EOF > Contents.json
 EOF
 }
 
-
 # sketch flow
 exportAppIcon
 exportIcons
-
