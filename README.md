@@ -17,3 +17,7 @@ You don't need to manage assets manually. This script help you export all the as
 	2. SKETCH_FILE
 3. Open terminal at your project root
 4. Run do_sketch.sh
+
+## Related link
+I just submit my Xcode plugin for same features.
+SketchExporter - https://github.com/gliyao/SketchExporter
