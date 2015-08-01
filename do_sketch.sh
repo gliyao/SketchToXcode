@@ -201,7 +201,7 @@ cat << EOF > Contents.json
 }
 EOF
   rm "$APP_ICON"
-  cd $PROJECT_DIR
+  cd "$PROJECT_DIR"
 }
 
 function exportIcons()
@@ -214,7 +214,7 @@ function exportIcons()
         --scales="0.5"
 
     # create assets to XCode
-    cd $ICONS_DIR
+    cd "$ICONS_DIR"
 
     for file in *.pdf
         do
@@ -232,7 +232,7 @@ function exportIcons()
         /bin/cp Contents.json "$icon_assets_dir"/Contents.json
     done
 
-    cd $PROJECT_DIR
+    cd "$PROJECT_DIR"
 
     # remove unused files
     rm -rf "$ICONS_DIR"
