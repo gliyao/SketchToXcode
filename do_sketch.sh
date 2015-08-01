@@ -213,6 +213,11 @@ function exportIcons()
         --formats="pdf" \
         --scales="0.5"
 
+    # create temp directory to export assets
+    if [ ! -d "$DIRECTORY" ]; then
+      mkdir "$ICONS_DIR"
+    fi
+
     # create assets to XCode
     cd "$ICONS_DIR"
 
