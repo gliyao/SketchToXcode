@@ -4,7 +4,7 @@ SKETCH_FILE="yourSketchFile.sketch"
 
 PROJECT_DIR=`pwd`
 IMAGES_ASSETS_DIR="$PROJECT_DIR"/"$PROJECT_NAME"/"Images.xcassets"
-ICONS_DIR="PROJECT_DIR"/"Icons"
+ICONS_DIR="$PROJECT_DIR"/"Icons"
 
 function exportAppIcon()
 {
