@@ -1,5 +1,7 @@
 # SketchToXcode
 
+![SketchToXcode.png](https://raw.githubusercontent.com/gliyao/SketchToXcode/master/SketchToXcode.png)
+
 You don't need to manage assets manually. This script help you export all the assets you need from your Sketch file.
 
 ## Requirement
