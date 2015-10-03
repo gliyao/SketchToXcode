@@ -257,4 +257,4 @@ EOF
 }
 
 # sketch flow
-exportIcons
+exportAppIcon
