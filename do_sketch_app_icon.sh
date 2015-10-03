@@ -1,4 +1,5 @@
 #!/bin/bash -l
+#!/bin/bash -l
 PROJECT_NAME="SketchToXcodeDemo"
 SKETCH_FILE="yourSketchFile.sketch"
 

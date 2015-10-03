@@ -1,10 +1,11 @@
 #!/bin/bash -l
+#!/bin/bash -l
 PROJECT_NAME="SketchToXcodeDemo"
 SKETCH_FILE="yourSketchFile.sketch"
 
 PROJECT_DIR=`pwd`
 IMAGES_ASSETS_DIR="$PROJECT_DIR"/"$PROJECT_NAME"/"Images.xcassets"
-ICONS_DIR="$PROJECT_DIR"/"Icons"
+ICONS_DIR="PROJECT_DIR"/"Icons"
 
 function exportAppIcon()
 {
@@ -201,7 +202,7 @@ cat << EOF > Contents.json
 }
 EOF
   rm "$APP_ICON"
-  cd "$PROJECT_DIR"
+  cd $PROJECT_DIR
 }
 
 function exportIcons()
@@ -213,13 +214,8 @@ function exportIcons()
         --formats="pdf" \
         --scales="0.5"
 
-    # create temp directory to export assets
-    if [ ! -d "$DIRECTORY" ]; then
-      mkdir "$ICONS_DIR"
-    fi
-
     # create assets to XCode
-    cd "$ICONS_DIR"
+    cd $ICONS_DIR
 
     for file in *.pdf
         do
@@ -237,7 +233,7 @@ function exportIcons()
         /bin/cp Contents.json "$icon_assets_dir"/Contents.json
     done
 
-    cd "$PROJECT_DIR"
+    cd $PROJECT_DIR
 
     # remove unused files
     rm -rf "$ICONS_DIR"
@@ -262,4 +258,4 @@ EOF
 }
 
 # sketch flow
-exportIcons
+createJSONwithAssetsName
